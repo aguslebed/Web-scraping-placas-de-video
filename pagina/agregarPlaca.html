@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <!-- Agrega la referencia a Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Agregar Producto con Imagen</h1>
+        
+        <!-- Formulario para agregar un producto -->
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productName">Nombre del Producto:</label>
+                <input type="text" class="form-control" id="productName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productPrice">Precio:</label>
+                <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productLink">Enlace:</label>
+                <input type="url" class="form-control" id="productLink" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productBrand">Marca:</label>
+                <input type="text" class="form-control" id="productBrand" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productStore">Tienda:</label>
+                <input type="text" class="form-control" id="productStore" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="productImage">Seleccionar Imagen:</label>
+                <input type="file" class="form-control-file" id="productImageInput">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Agregar Producto</button>
+        </form>
+
+        <!-- Lista de productos agregados -->
+        <h2 class="mt-4">Productos Agregados</h2>
+        <ul id="productList" class="list-group">
+            <!-- Los productos agregados se mostrarán aquí -->
+        </ul>
+    </div>
+
+    <!-- Agrega la referencia a Bootstrap JS (jQuery y Popper.js) y Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="app.js">    
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+*{
+    
+}
+
+body{
+    background-color: rgb(231, 222, 222);
+}
+
+h1{
+    text-align: center;
+}
+header{
+    padding: 10px;
+}
+.barra-busqueda{
+    display: flex;
+}
+
+.barra-busqueda *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.botones-header{
+    margin: 10px;
+    text-align: center;
+}
+
+.botones-header button {
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid green;
+    padding: 5px;
+}
+
+.botones-header a{
+    text-decoration: none;
+
+    color: green;
+}
+
+.botones-header button:hover{
+    background-color: green;
+}
+
+.botones-header button:hover a{
+    transition: background-color 0.3s, color 0.3s;
+    background-color: green;
+    color: white;
+}
+
+
+article{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 600px;
+    box-shadow: 5px 5px 10px #888888;
+
+}
+
+#contenedor-placas{
+    margin: 10px;
+}
+
+.imagen-placa{
+    height: 30%;
+    width: 100%;   
+}
+article button{
+    border: 1px solid green;
+    background-color:white;
+    border-radius: 5px;
+}
+
+article button a{
+   text-decoration: none;
+   color: green;
+}
+
+article button:hover{
+    background-color: green;
+}
+
+article button:hover a{
+    transition: background-color 0.3s, color 0.3s;
+    background-color: green;
+    color: white;
+}
+
+.btn-filtro{
+    background-color: transparent;
+    border: 1px solid green;
+    margin: 5px;
+    border-radius: 15px;
+    color: green
+}
+
+.btn-filtro:hover{
+    transition: background-color 0.3s, color 0.3s;
+    background-color: green;
+    color: white;
+}
